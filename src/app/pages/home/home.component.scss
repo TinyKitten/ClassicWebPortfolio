@@ -1,0 +1,10 @@
+.content {
+    display: flex;
+    height: calc(100% - 72px);
+
+    .cards {
+        display: flex;
+        padding-top: 1.5rem;        
+        padding-left: 1.5rem;
+    }
+}

@@ -1,3 +1,11 @@
-<p>
-  home works!
-</p>
+<app-header></app-header>
+
+<div class="content">
+    <app-left-side></app-left-side>
+    
+    <div class="cards">
+      <app-card *ngFor="let card of cards" [card]="card"></app-card>
+    </div>    
+</div>
+
+<app-footer></app-footer>
