@@ -7,6 +7,6 @@ before_script:
   - yarn global add @angular/cli
   - yarn global add karma
   - yarn
-  - ng build --aot
+  - yarn build
 
 script: yarn test-ci
