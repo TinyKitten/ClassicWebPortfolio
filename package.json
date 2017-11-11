@@ -5,7 +5,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --aot --prod --output-path docs --base-href TinyKitten",
+    "build": "ng build",
+    "build-docs": "ng build --prod --output-path docs --base-href TinyKitten",
     "test": "ng test",
     "test-ci": "ng test --single",
     "lint": "ng lint",
