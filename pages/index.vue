@@ -1,11 +1,11 @@
 <template>
   <section class="container">
     <header>
-      <img class="logo" src="~assets/img/tinykitten.png">
+      <img class="logo" src="~assets/img/tinykitten.png" alt="TinyKitten">
     </header>
     <article class="content">
       <div class="content-inner">
-            <img class="logo" src="~assets/img/tinykitten.png">
+            <img class="logo" src="~assets/img/tinykitten.png" alt="TinyKitten">
             <h1>TinyKitten</h1>
             <h2>群馬県在住のフロントエンドエンジニアです。</h2>
       </div>
