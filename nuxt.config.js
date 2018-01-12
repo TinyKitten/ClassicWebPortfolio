@@ -14,7 +14,6 @@ module.exports = {
       lang: 'ja'
     },
     link: [
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/earlyaccess/notosansjapanese.css' }
     ]
   },
   /*
