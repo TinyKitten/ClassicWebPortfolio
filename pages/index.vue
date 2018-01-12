@@ -10,50 +10,26 @@
             <h2>Frontend Engineer in Gunma Empire.</h2>
       </div>
     </article>
-    <article class="content about">
-      <div class="content-inner">
-            <img class="logo" src="~assets/img/tinykitten.png" alt="TinyKitten">
-            <div class="right">
-              <h1>TinyKitten</h1>
-              <p>
-                群馬県在住の自称フロントエンドエンジニア。<br>
-                Web開発とデザインとかが趣味だったり、<br>
-                TimelineというSNSを開発してたりする。
-              </p>
-              <ul class="socials">
-                <li>
-                  <a href="https://twitter.com/tinykitten8" target="_blank">
-                  <img class="social-icon" src="~assets/img/twitter-social.svg" alt="Twitter">
-                  </a>
-                </li>
-                <li>
-                  <a href="https://github.com/TinyKitten" target="_blank">
-                  <img class="social-icon" src="~assets/img/github-social.svg" alt="Github">
-                  </a>
-                </li>
-              </ul>
-            </div>
-        </div>
-    </article>
-      <article class="content works">
-      <div class="content-inner">
-        <a href="https://timeline.blue" target="_blank">
-            <img class="img" src="~assets/img/tl.png" alt="TinyKitten">
-          </a>
-            <div class="right">
-              <h1>Timeline</h1>
-              <p>
-                Twitterライクを目指すSNSです。
-              </p>
-            </div>
-      </div>
-    </article>
+    <about></about>
+    <workstl></workstl>
+    <worksns></worksns>
+    <share></share>
   </section>
 </template>
 
 <script>
+  import about from '../components/about'
+  import workstl from '../components/works-tl'
+  import worksns from '../components/works-ns'
+  import share from '../components/share'
+
   export default {
-    components: {},
+    components: {
+      about,
+      workstl,
+      worksns,
+      share
+    },
     data () {
       return {
         online: true
@@ -95,55 +71,6 @@
     height: calc(100vh - 64px);
     background: #008ffe;
   }
-  .about {
-    text-align: center;
-    background: #333;
-    height: 100vh;
-  }
-  .about .content-inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  .about .content-inner .right {
-    margin-top: 32px;
-  }
-  .about .content-inner .right .socials {
-    display: flex;
-    padding: 0;
-    list-style-type: none;
-    justify-content: center;
-    margin-top: 1rem;
-  }
-  .about .content-inner .right .socials .social-icon {
-    width: 32px;
-    margin-right: 18px;
-  }
-  .works {
-    text-align: center;
-    background: #fafafa;
-    height: 100vh;
-    color: #333;
-  }
-  .works .content-inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  .works .content-inner .img {
-    width: 80vw;
-    height: auto;
-    box-shadow: 0 0 8px rgba(0, 0, 0, .5);
-    border-radius: 4px;
-  }
-  .works .content-inner .right {
-    margin-top: 32px;
-    text-align: center;
-  }
   .content-inner {
     width: 80vw;
   }
@@ -174,26 +101,6 @@
     }
     .content p {
       line-height: 1.5rem;
-    }
-    .about .content-inner {
-      flex-direction: row;
-      text-align: left;
-    }
-    .about .content-inner .right .socials {
-      justify-content: flex-start;
-    }
-    .about .content-inner .right {
-      margin-left: 64px;
-    }
-    .works .content-inner {
-      flex-direction: row;
-    }
-    .works .content-inner .img {
-      width: 40vw;
-    }
-    .works .content-inner .right {
-      text-align: left;
-      margin-left: 64px;
     }
   }
 </style>
