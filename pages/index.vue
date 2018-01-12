@@ -156,17 +156,25 @@
   }
   .content h1 {
     font-size: 4rem;
-    font-weight: lighter;
     margin-bottom: 1rem;
   }
+  .content h2 {
+    font-weight: lighter;
+  }
   .content p {
-    line-height: 1.25rem;
+    line-height: 2rem;
   }
   .content h2 {
     font-size: 1rem;
     font-weight: 300;
   }
   @media (min-width: 800px) {
+    .content h1 {
+      font-size:rem;
+    }
+    .content p {
+      line-height: 1.5rem;
+    }
     .about .content-inner {
       flex-direction: row;
       text-align: left;

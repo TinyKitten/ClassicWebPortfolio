@@ -57,7 +57,7 @@
   html, body {
     margin: 0;
     padding: 0;
-    font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
+    font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Roboto, "Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
