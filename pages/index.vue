@@ -151,12 +151,15 @@
     height: 240px;
   }
   .content h1, .content h2 {
-    margin: 0;
+    margin-bottom: 1rem;
   }
   .content h1 {
     font-size: 4rem;
     font-weight: 100;
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
+  }
+  .content p {
+    line-height: 1.25rem;
   }
   .content h2 {
     font-size: 1rem;
@@ -169,6 +172,7 @@
     }
     .about .content-inner .right .socials {
       justify-content: flex-start;
+      margin-top: 1rem;
     }
     .about .content-inner .right {
       margin-left: 64px;
