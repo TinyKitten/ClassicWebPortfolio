@@ -2,7 +2,9 @@ module.exports = {
   /*
   ** Build configuration
   */
-  build: {},
+  build: {
+    vendor: ['vue-lazyload']
+  },
   /*
   ** Headers
   ** Common headers are already provided by @nuxtjs/pwa preset
@@ -27,5 +29,8 @@ module.exports = {
     ['@nuxtjs/google-analytics', {
       id: 'UA-109126456-2'
     }]
+  ],
+  plugins: [
+    '~/plugins/vue-lazyload'
   ]
 }
