@@ -155,7 +155,7 @@
   }
   .content h1 {
     font-size: 4rem;
-    font-weight: 200;
+    font-weight: 100;
     margin-bottom: .5rem;
   }
   .content h2 {
