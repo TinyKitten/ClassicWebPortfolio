@@ -115,6 +115,7 @@
     padding: 0;
     list-style-type: none;
     justify-content: center;
+    margin-top: 1rem;
   }
   .about .content-inner .right .socials .social-icon {
     width: 32px;
@@ -172,7 +173,6 @@
     }
     .about .content-inner .right .socials {
       justify-content: flex-start;
-      margin-top: 1rem;
     }
     .about .content-inner .right {
       margin-left: 64px;
