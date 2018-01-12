@@ -154,7 +154,7 @@
     margin: 0;
   }
   .content h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 200;
     margin-bottom: .5rem;
   }
@@ -170,6 +170,9 @@
     .about .content-inner .right .socials {
       justify-content: flex-start;
     }
+    .about .content-inner .right {
+      margin-left: 64px;
+    }
     .works .content-inner {
       flex-direction: row;
     }
@@ -178,7 +181,7 @@
     }
     .works .content-inner .right {
       text-align: left;
-      margin-left: 32px;
+      margin-left: 64px;
     }
   }
 </style>
