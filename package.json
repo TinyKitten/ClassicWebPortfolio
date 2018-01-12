@@ -6,6 +6,7 @@
   "author": "TinyKitten <catwalk8205@gmail.com>",
   "private": true,
   "dependencies": {
+    "@nuxtjs/google-analytics": "^2.0.2",
     "@nuxtjs/pwa": "latest",
     "nuxt": "latest",
     "push-dir": "^0.4.1"
