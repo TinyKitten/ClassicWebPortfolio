@@ -156,7 +156,7 @@
   }
   .content h1 {
     font-size: 4rem;
-    font-weight: 100;
+    font-weight: lighter;
     margin-bottom: 1rem;
   }
   .content p {

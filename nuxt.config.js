@@ -12,7 +12,10 @@ module.exports = {
   head: {
     htmlAttrs: {
       lang: 'ja'
-    }
+    },
+    link: [
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/earlyaccess/notosansjapanese.css' }
+    ]
   },
   /*
   ** Customize the progress-bar color
