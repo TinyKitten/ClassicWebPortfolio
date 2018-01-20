@@ -1,9 +1,9 @@
 <template>
     <article class="content share">
       <div class="content-inner">
-          <h3>シェアしよう</h3>
+          <h3>Share</h3>
 <a href="https://twitter.com/share?text=TinyKittenのウェブサイト&url=https://tinykitten.me/&hashtags=TinyKitten" onClick="window.open(encodeURI(decodeURI(this.href)), 'tweetwindow', 'width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1'); return false;" rel="nofollow" class="twitter-link">
-Twitter
+<img src="~assets/img/twitter-social.svg" alt="Twitter">
 </a>
 
         </div>
@@ -41,23 +41,13 @@ Twitter
   flex-direction: column;
 }
 .share .content-inner h3 {
-  font-size: 3rem;
-  font-weight: bold;
+  font-size: 4rem;
+  font-weight: lighter;
 }
 
-.share .content-inner .twitter-link {
-  font-size: 2rem;
-  color: #fff;
-  text-decoration: none;
-  padding: 24px;
-  border-radius: 8px;
-  margin-top: 48px;
-  font-weight: bold;
-  box-shadow: 0 0 8px rgba(0, 0, 0, .25);
-  transition: .25s;
-}
-
-.share .content-inner .twitter-link:hover {
-    box-shadow: 0 0 24px rgba(0, 0, 0, .25);
+.twitter-link {
+  margin-top: 32px;
+  width: 120px;
+  height: 120px;
 }
 </style>
