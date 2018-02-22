@@ -16,14 +16,6 @@ module.exports = {
       }
     ]
   },
-  manifest: {
-    name: 'TinyKitten',
-    short_name: 'tinykitten',
-    description: 'Official TinyKitten Portfolio',
-    lang: 'ja',
-    theme_color: '#008FFE',
-    background_color: '#FFFFFF',
-  },
   /*
   ** Customize the progress bar color
   */
