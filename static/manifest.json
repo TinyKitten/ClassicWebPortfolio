@@ -5,6 +5,7 @@
  "lang": "ja",
  "theme_color": "#008FFE",
  "background_color": "#FFFFFF",
+ "start_url": ".",
  "icons": [
   {
    "src": "\/android-icon-36x36.png",

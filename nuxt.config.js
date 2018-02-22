@@ -11,9 +11,8 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      {
-        'href': 'https://fonts.googleapis.com/css?family=Raleway', 'rel': 'stylesheet'
-      }
+      { rel: 'manifest', href: '/manifest.json' },
+      { href: 'https://fonts.googleapis.com/css?family=Raleway', rel: 'stylesheet' }
     ]
   },
   /*
