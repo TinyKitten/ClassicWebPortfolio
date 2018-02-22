@@ -10,13 +10,16 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'TinyKitten Official Website' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        'href': 'https://fonts.googleapis.com/css?family=Raleway', 'rel': 'stylesheet'
+      }
     ]
   },
   /*
   ** Customize the progress bar color
   */
-  loading: { color: '#3B8070' },
+  loading: { color: '#008FFE' },
   /*
   ** Build configuration
   */
