@@ -3,7 +3,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'tinykitten',
+    title: 'TinyKitten',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -15,6 +15,14 @@ module.exports = {
         'href': 'https://fonts.googleapis.com/css?family=Raleway', 'rel': 'stylesheet'
       }
     ]
+  },
+  manifest: {
+    name: 'TinyKitten',
+    short_name: 'tinykitten',
+    description: 'Official TinyKitten Portfolio',
+    lang: 'ja',
+    theme_color: '#008FFE',
+    background_color: '#FFFFFF',
   },
   /*
   ** Customize the progress bar color

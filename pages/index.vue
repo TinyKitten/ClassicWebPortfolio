@@ -6,7 +6,7 @@
     </header>
     <ul class="works">
       <li class="product">
-        <a href="#" class="product">
+        <a href="" class="product">
         <img class="product-image" src="~assets/tinykitten.png" alt="TinyKitten">
         <div class="overlay">
           <h3 class="product-name">TinyKitten Icon</h3>
