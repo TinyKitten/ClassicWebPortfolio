@@ -1,20 +1,43 @@
 <template>
     <article class="aboutme">
-        <img class="tinykitten" src="~assets/tinykitten.png" alt="TinyKitten">
-        <div class="text">
-                  <h2 class="name">TinyKitten</h2>
-        <p class="content">
-          Web系をこよなく愛する自称フロントエンドエンジニアです。<br>
-          岡山の県北ではなく群馬県在住。<br>
-          <a href="https://twitter.com/tinykitten8" target="_blank" rel="noreferrer">Twitter</a>やってます。
-        </p>
+        <img class="tinykitten" src="~assets/tinykitten.png" alt="TinyKitten" :class="{ showImg: visible }">
+        <div class="text" :class="{ showText: visible }">
+            <h2 class="name">TinyKitten</h2>
+            <p class="content">
+            Web系をこよなく愛する自称フロントエンドエンジニアです。<br>
+            岡山の県北ではなく群馬県在住。<br>
+            <a href="https://twitter.com/tinykitten8" target="_blank" rel="noreferrer">Twitter</a>やってます。
+            </p>
         </div>
     </article>
 </template>
 
 <script>
 export default {
-
+    data () {
+        return {
+            posY: 0,
+            visible: false,
+        };
+    },
+    watch: {
+        '$window.height': this.getPosition,
+    },
+    methods: {
+        getPosition() {
+            this.posY = this.$el.getBoundingClientRect().top + window.pageYOffset - document.documentElement.clientHeight + 500;
+        },
+        handleScroll() {
+            const scroll = window.scrollY;
+            if (this.posY < scroll) {
+                this.visible = true;
+            }
+        },
+    },
+    mounted () {
+      this.getPosition();
+      window.addEventListener('scroll', this.handleScroll);
+    },
 };
 </script>
 
@@ -44,6 +67,30 @@ export default {
     letter-spacing: 1px;
     line-height: 1.75rem;
   }
+
+  .tinykitten, .text {
+      opacity: 0;
+      transform: translateY(100px);
+  }
+
+  a {
+    color: #555;
+  }
+
+  /* ぶわーっとするやつ */
+  @keyframes showAnimation {
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+  .showImg {
+      animation: showAnimation .5s ease forwards;
+  }
+  .showText {
+      animation: showAnimation .5s .25s ease forwards;
+  }
+
   @media (min-width: 800px) {
     .aboutme {
       flex-direction: row;
