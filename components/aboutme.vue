@@ -70,7 +70,7 @@ export default {
   color: #555;
   letter-spacing: 1px;
   line-height: 1.5rem;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .tinykitten,
@@ -107,7 +107,7 @@ a {
     margin-right: 72px;
   }
   .aboutme .content {
-      font-size: 1rem;
+    font-size: 1rem;
   }
   .aboutme .tinykitten:hover {
     filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.5));

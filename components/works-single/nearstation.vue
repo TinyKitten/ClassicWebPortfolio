@@ -65,7 +65,7 @@ export default {
 .nearstation .name {
   font-size: 2.5rem;
   color: #555;
-  margin: 1rem 0 .75rem 0;
+  margin: 1rem 0 0.75rem 0;
 }
 .nearstation .copy {
   color: #555;
@@ -78,7 +78,7 @@ export default {
   color: #555;
   letter-spacing: 1px;
   line-height: 1.5rem;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .tinykitten,
@@ -92,14 +92,14 @@ a {
 }
 
 .link {
-    display: inline-block;
-    text-decoration: none;
-    border: 1px solid #555;
-    padding: 8px;
-    margin-top: 12px;
-    background: #fff;
-    box-shadow: 0 0 8px rgb(0, 0, 0, 0.1);
-    transition: .25s;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #555;
+  padding: 8px;
+  margin-top: 12px;
+  background: #fff;
+  box-shadow: 0 0 8px rgb(0, 0, 0, 0.1);
+  transition: 0.25s;
 }
 
 /* ぶわーっとするやつ */

@@ -65,7 +65,7 @@ export default {
 .tinykittenicon .name {
   font-size: 2.5rem;
   color: #555;
-  margin: 1rem 0 .75rem 0;
+  margin: 1rem 0 0.75rem 0;
 }
 .tinykittenicon .copy {
   color: #555;
@@ -78,7 +78,7 @@ export default {
   color: #555;
   letter-spacing: 1px;
   line-height: 1.5rem;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .tinykitten,
