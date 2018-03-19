@@ -1,7 +1,7 @@
 <template>
       <ul class="works">
       <li class="product">
-        <a href="" class="product">
+        <a href="#tk-icon" class="product">
         <img class="product-image" src="~assets/tinykitten.png" alt="TinyKitten">
         <div class="overlay">
           <h3 class="product-name">TinyKitten Icon</h3>
@@ -10,7 +10,7 @@
         </a>
       </li>
       <li class="product">
-        <a href="https://teamkitten.tk" target="_blank" rel="noreferrer" class="product">
+        <a href="#teamkitten" class="product">
         <img class="product-image" src="~assets/teamkitten.png" alt="TeamKitten">
         <div class="overlay">
           <h3 class="product-name">TeamKitten</h3>
@@ -19,7 +19,7 @@
         </a>
       </li>
       <li class="product">
-        <a href="https://near.tinykitten.me" target="_blank" rel="noreferrer" class="product">
+        <a href="#nearstation" class="product">
         <img class="product-image" src="~assets/nearstation.png" alt="NearStation">
         <div class="overlay">
           <h3 class="product-name">NearStation</h3>
@@ -28,7 +28,7 @@
         </a>
       </li>
       <li class="product">
-        <a href="https://github.com/TinyKitten/Buisinesscard" target="_blank" rel="noreferrer" class="product">
+        <a href="#buisinesscard" class="product">
         <img class="product-image" src="~assets/buisinesscard.png" alt="NearStation">
         <div class="overlay">
           <h3 class="product-name">Buisinesscard</h3>

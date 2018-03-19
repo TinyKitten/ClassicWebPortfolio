@@ -5,10 +5,10 @@
     <about-me />
     
     <!-- works list -->
-    <tiny-kitten-icon />
-    <team-kitten />
-    <near-station />
-    <buisiness-card />
+    <tiny-kitten-icon id="tk-icon" />
+    <team-kitten id="teamkitten" />
+    <near-station id="nearstation" />
+    <buisiness-card id="buisinesscard" />
 
     <footer class="footer">
       <span class="copyright">Copyright &copy; 2018 TinyKitten</span>
