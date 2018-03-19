@@ -19,24 +19,24 @@ export default {
     PageHeader,
     AboutMe,
     Works,
-  }
-}
+  },
+};
 </script>
 
 <style scoped>
-  .container {
-    height: 100%;
-  }
-  .footer {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    text-align: center;
-    height: 64px;
-    color: #aaa;
-    line-height: 1.5rem;
-    font-family: sans-serif;
-  }
+.container {
+  height: 100%;
+}
+.footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  height: 64px;
+  color: #aaa;
+  line-height: 1.5rem;
+  font-family: sans-serif;
+}
 </style>

@@ -6,28 +6,26 @@
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style scoped>
-  .title {
-    height: calc(62vh - 2px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    border-top: 2px solid #008FFE;
-  }
-  .heading {
-    font-size: 2.5rem;
-    line-height: 3.5rem;
-    color: #333;
-  }
-  .role {
-    font-size: 1rem;
-    color: #555;
-  }
+.title {
+  height: calc(62vh - 2px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  border-top: 2px solid #008ffe;
+}
+.heading {
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  color: #333;
+}
+.role {
+  font-size: 1rem;
+  color: #555;
+}
 </style>

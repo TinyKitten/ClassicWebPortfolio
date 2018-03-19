@@ -40,71 +40,69 @@
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style scoped>
-  .works {
-    display: flex;
-    flex-wrap: wrap;
-    min-height: 38vh;
-    background: #f5f5f5;
+.works {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 38vh;
+  background: #f5f5f5;
+}
+.works .product {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 19vh;
+  overflow: hidden;
+  border: 1px solid #eee;
+}
+.works .product .overlay {
+  opacity: 0;
+  display: flex;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.25s ease;
+  text-align: center;
+}
+.works .product .overlay .product-name {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-weight: bold;
+}
+.works .product .overlay .product-description {
+  opacity: 0.75;
+  font-size: 0.9rem;
+  line-height: 1rem;
+}
+.works .product .product-image {
+  display: block;
+  max-width: 50%;
+  max-height: 75%;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.15));
+}
+.works .product:hover .overlay {
+  opacity: 1;
+}
+@media (min-width: 800px) {
+  .works .product .product-image {
+    max-width: 75%;
+    max-height: 90%;
   }
   .works .product {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 19vh;
-    overflow: hidden;
-    border: 1px solid #eee;
+    width: 25vw;
+    border: none;
   }
-  .works .product .overlay {
-    opacity: 0;
-    display: flex;
-    background: rgba(0, 0, 0, .5);
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    color: #fff;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    transition: .25s ease;
-    text-align: center;
-  }
-  .works .product .overlay .product-name {
-    font-size: 1.5rem;
-    line-height: 2.5rem;
-    font-weight: bold;
-  }
-  .works .product .overlay .product-description {
-    opacity: .75;
-    font-size: .9rem;
-    line-height: 1rem;
-  }
-  .works .product .product-image {
-    display: block;
-    max-width: 50%;
-    max-height: 75%;
-    filter: drop-shadow(0 0 2px rgba(0, 0, 0, .15));
-  }
-  .works .product:hover .overlay {
-    opacity: 1;
-  }
-  @media (min-width: 800px) {
-    .works .product .product-image {
-      max-width: 75%;
-      max-height:90%;
-    }
-    .works .product {
-      width: 25vw;
-      border: none;
-    }
-  }
+}
 </style>
