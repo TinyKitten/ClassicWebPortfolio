@@ -8,7 +8,7 @@
     <tiny-kitten-icon id="tk-icon" />
     <team-kitten id="teamkitten" />
     <near-station id="nearstation" />
-    <buisiness-card id="buisinesscard" />
+    <business-card id="businesscard" />
 
     <footer class="footer">
       <span class="copyright">Copyright &copy; 2018 TinyKitten</span>
@@ -24,7 +24,7 @@ import Works from '../components/works';
 import TinyKittenIcon from '../components/works-single/tinykitten';
 import TeamKitten from '../components/works-single/teamkitten';
 import NearStation from '../components/works-single/nearstation';
-import BuisinessCard from '../components/works-single/buisinesscard';
+import BisinessCard from '../components/works-single/businesscard';
 
 export default {
   components: {

@@ -28,10 +28,10 @@
         </a>
       </li>
       <li class="product">
-        <a href="#buisinesscard" class="product">
-        <img class="product-image" src="~assets/buisinesscard.png" alt="NearStation">
+        <a href="#businesscard" class="product">
+        <img class="product-image" src="~assets/businesscard.png" alt="NearStation">
         <div class="overlay">
-          <h3 class="product-name">Buisinesscard</h3>
+          <h3 class="product-name">Businesscard</h3>
           <p class="product-description">TinyKittenの名刺です。</p>
         </div>
         </a>
