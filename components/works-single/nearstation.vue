@@ -97,7 +97,6 @@ a {
   border: 1px solid #555;
   padding: 8px;
   margin-top: 12px;
-  background: #fff;
   box-shadow: 0 0 8px rgb(0, 0, 0, 0.1);
   transition: 0.25s;
 }
