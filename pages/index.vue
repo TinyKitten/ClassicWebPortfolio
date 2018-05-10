@@ -24,7 +24,7 @@ import Works from '../components/works';
 import TinyKittenIcon from '../components/works-single/tinykitten';
 import TeamKitten from '../components/works-single/teamkitten';
 import NearStation from '../components/works-single/nearstation';
-import BisinessCard from '../components/works-single/businesscard';
+import BusinessCard from '../components/works-single/businesscard';
 
 export default {
   components: {
@@ -34,7 +34,7 @@ export default {
     TinyKittenIcon,
     TeamKitten,
     NearStation,
-    BuisinessCard,
+    BusinessCard,
   },
 };
 </script>
