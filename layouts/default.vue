@@ -1,11 +1,26 @@
 <template>
   <div>
+    <app-header />
     <nuxt/>
+    <app-footer />
   </div>
 </template>
 
+<script>
+import AppHeader from '~/components/AppHeader.vue';
+import AppFooter from '~/components/AppFooter.vue';
+
+export default {
+  components: {
+    AppHeader,
+    AppFooter,
+  },
+};
+</script>
+
+
 <style>
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -136,7 +151,9 @@ table {
 }
 html,
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', -apple-system, BlinkMacSystemFont, 'Helvetica Neue',
+    'Yu Gothic', YuGothic, 'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN,
+    Arial, 'メイリオ', Meiryo, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
