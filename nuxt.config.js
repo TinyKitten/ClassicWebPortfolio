@@ -46,10 +46,6 @@ module.exports = {
         sizes: '180x180',
         href: '/icons/apple-touch-icon.png',
       },
-      {
-        href: 'https://fonts.googleapis.com/css?family=Raleway:500,600',
-        rel: 'stylesheet',
-      },
     ],
   },
   modules: ['@nuxtjs/pwa'],
@@ -93,5 +89,9 @@ module.exports = {
     description: siteDescription,
     lang: 'ja',
   },
-  plugins: [{ src: '~plugins/ga.js', ssr: false }],
+  plugins: [
+    { src: '~plugins/ga.js', ssr: false },
+    { src: '~plugins/element.js' },
+  ],
+  css: ['element-ui/lib/theme-chalk/index.css'],
 };

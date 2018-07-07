@@ -1,12 +1,8 @@
 <template>
-  <header class="header">
-    <router-link to="/">
-      <img class="logo" src="~/assets/icon.png" alt="TinyKitten">
+  <header>
+    <router-link to="/" class="title">
+      <img class="logo" src="~assets/icon.png" alt="logo">
     </router-link>
-
-    <router-link class="link active" to="/">Site</router-link>
-    <a href="https://blog.tinykitten.me/" target="_blank" rel="noopener noreferrer" class="link">Blog</a>
-    <a href="https://twitter.com/tinykitten8" target="_blank" rel="noopener noreferrer" class="link">Twitter</a>
   </header>
 </template>
 
@@ -15,38 +11,24 @@ export default {};
 </script>
 
 <style scoped>
-.header {
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 48px;
+  background: #fff;
+  z-index: 9999;
+  width: 100%;
   display: flex;
-  align-items: center;
-  text-decoration: none;
-  border-bottom: 1px solid #eee;
-  padding: 8px 32px;
   justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
 }
-.link {
-  display: none;
+.title {
+  text-decoration: none;
 }
 .logo {
   width: 32px;
   height: 32px;
-  filter: drop-shadow(0 0 2px rgba(0, 143, 254, 0.25));
-}
-
-@media (min-width: 800px) {
-  .header {
-    justify-content: flex-start;
-  }
-  .link,
-  .link a {
-    color: #333;
-    margin-left: 21px;
-    text-decoration: none;
-    display: inline;
-  }
-  .active,
-  .active a {
-    color: #008ffe;
-    filter: drop-shadow(0 0 1px rgba(0, 143, 254, 0.25));
-  }
 }
 </style>
