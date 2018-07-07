@@ -2,18 +2,15 @@
   <div>
     <app-header />
     <nuxt/>
-    <app-footer />
   </div>
 </template>
 
 <script>
 import AppHeader from '~/components/AppHeader.vue';
-import AppFooter from '~/components/AppFooter.vue';
 
 export default {
   components: {
     AppHeader,
-    AppFooter,
   },
 };
 </script>
@@ -151,9 +148,8 @@ table {
 }
 html,
 body {
-  font-family: 'Raleway', -apple-system, BlinkMacSystemFont, 'Helvetica Neue',
-    'Yu Gothic', YuGothic, 'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN,
-    Arial, 'メイリオ', Meiryo, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;

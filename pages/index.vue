@@ -1,158 +1,133 @@
 <template>
   <section class="container">
-    <div class="hero">
-      <img class="avatar" src="~/assets/icon.png" alt="TinyKitten">
-      <h1 class="title">TinyKitten</h1>
-      <h2 class="role">FRONTEND ENGINNER</h2>
-      <ul class="socials">
-        <li class="social-item">
-          <a href="https://twitter.com/tinykitten8" target="_blank" rel="noopener noreferrer" class="social-link"><img src="~/assets/icons/twitter.png" alt="twitter"></a>
-        </li>
-        <li class="social-item">
-          <a href="https://github.com/tinykitten" target="_blank" rel="noopener noreferrer" class="social-link"><img src="~/assets/icons/github.png" alt="github"></a>
-        </li>
-        <li class="social-item">
-          <a href="https://goo.gl/forms/4R6sOefWZ5rTIBGf1" target="_blank" rel="noopener noreferrer" class="social-link"><img src="~/assets/icons/mail.png" alt="contact"></a>
-        </li>
-      </ul>
-
-    </div>
-    <div class="tile">
-      <div class="item" @click="forwardToWorks('me')">
-        <img class="icon" src="~/assets/icon.png" alt="Me">
-        <p class="description">
-          Me
-        </p>
-      </div>
-      <div class="item" @click="forwardToWorks('teamkitten')">
-        <img class="icon" src="~/assets/teamkitten.png" alt="TeamKitten">
-        <p class="description">
-          TeamKitten
-        </p>
-      </div>
-      <div class="item" @click="forwardToWorks('businesscard')">
-        <img class="icon" src="~/assets/businesscard.png" alt="Businesscard">
-        <p class="description">
-          Businesscard
-        </p>
-      </div>
-    </div>
+    <el-carousel :interval="5000" arrow="always" height="100vh">
+      <el-carousel-item>
+        <div class="slide first">
+          <img class="logo" src="~assets/icon.png" alt="tinykitten">
+          <h2 class="title">TinyKitten</h2>
+          <h3 class="subtitle">Frontend Engineer</h3>
+        </div>
+      </el-carousel-item>
+      <el-carousel-item>
+        <div class="slide first">
+          <img class="teamkitten-logo" src="~assets/teamkitten.png" alt="teamkitten">
+          <h3 class="subtitle">「面白い」ことをしたい人が集まる<br>コミュニティです。</h3>
+          <a class="link-button" href="https://teamkitten.tk/">更に詳しく</a>
+        </div>
+      </el-carousel-item>
+      <el-carousel-item>
+        <div class="slide trivia">
+          <div class="trivia-inner">
+            <h2 class="trivia-appname">Trivia</h2>
+            <h3 class="trivia-subtitle">つながるトリビア、はじめよう</h3>
+            <p class="trivia-description">
+              Triviaは、トリビアでつながるSNS。<br>
+              さあ、トリビアの世界へ飛び込もう。
+            </p>
+            <a class="link-button" href="https://trivia.teamkitten.tk/">更に詳しく</a>
+          </div>
+        </div>
+      </el-carousel-item>
+      <el-carousel-item>
+        <div class="slide businesscard">
+          <img class="businesscard-img" src="~assets/businesscard.png" alt="businesscard">
+          <h3 class="businesscard-subtitle">TinyKittenの名刺</h3>
+          <p class="businesscard-description">
+            ティッシュ代わりや、公衆トイレに紙がなかったとき、あぶらとり紙としてご活用いただけます。
+          </p>
+        </div>
+      </el-carousel-item>
+    </el-carousel>
   </section>
 </template>
 
 <script>
-export default {
-  methods: {
-    forwardToWorks(path) {
-      this.$router.push(`/works/${path}`);
-    },
-  },
-};
+export default {};
 </script>
 
 <style scoped>
-.hero {
-  width: 100vw;
-  overflow: hidden;
+.slide {
+  height: 100vh;
+  color: #fff;
+}
+.first {
+  background: #008ffe;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: calc(100vh - 51px - 120px);
 }
-.hero .avatar {
+.logo {
   width: 240px;
   height: 240px;
-  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.25));
-  transition: 0.25s;
-  margin-bottom: 32px;
 }
-.hero .avatar:hover {
-  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.5));
+.title {
+  font-size: 3rem;
 }
-.hero .title {
-  font-size: 2rem;
-  font-weight: 600;
-  letter-spacing: 1px;
-  color: #333;
-}
-.hero .role {
+.subtitle {
   margin-top: 8px;
-  letter-spacing: 2px;
+  line-height: 1.5rem;
+  font-size: 1.25rem;
 }
-.tile {
-  width: 100vw;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.25));
-  background: #f5f5f5;
-}
-.tile .item {
-  flex: 1;
-  min-width: 100%;
-  height: 120px;
-  transition: 0.25s;
-  cursor: pointer;
+.trivia {
+  background: url('~assets/trivia-bg.jpg') no-repeat center fixed;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
-  border: 0.25px solid #efefef;
-  flex-direction: column;
-  position: relative;
-}
-.tile .item:hover {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-}
-.tile .item .icon {
-  max-width: 75%;
-  max-height: 75%;
-  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.25));
-}
-.tile .item .description {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  width: 100%;
-  height: 48px;
   text-align: center;
-  line-height: 48px;
-  opacity: 0;
-  transition: 0.25s;
 }
-.tile .item:hover .description {
-  opacity: 1;
+.trivia-appname {
+  font-size: 4rem;
+  font-weight: bold;
 }
-
-.socials {
-  margin-top: 12px;
-  display: flex;
+.trivia-subtitle {
+  font-size: 0.75rem;
+  font-weight: bold;
 }
-.social-item {
-  margin-right: 12px;
+.trivia-description {
+  line-height: 1.5;
+  font-size: 0.75rem;
+  margin-top: 24px;
+  font-weight: bold;
 }
-.social-item:last-child {
-  margin-right: 0px;
+.link-button {
+  display: inline-block;
+  margin-top: 24px;
+  border-radius: 4px;
+  padding: 11px 18px;
+  border: 1px solid #fff;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
 }
-.social-link img {
-  height: 32px;
+.teamkitten-logo {
+  width: 320px;
+  max-width: 75%;
+  margin-bottom: 24px;
 }
-
-footer {
+.businesscard {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  background: #333;
+  text-align: center;
+  color: #ffffff;
 }
-
-/* Oppa PC Style */
-@media (min-width: 800px) {
-  .tile .item {
-    flex: 0.25;
-    min-width: 25vw;
-  }
+.businesscard-img {
+  width: 320px;
+  max-width: 75%;
+  margin-bottom: 24px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+}
+.businesscard-subtitle {
+  font-size: 1.5rem;
+}
+.businesscard-description {
+  margin-top: 12px;
+  width: 85%;
+  line-height: 1.25;
 }
 </style>
