@@ -27,6 +27,13 @@ module.exports = {
       },
       { name: 'msapplication-TileColor', content: '#000000' },
     ],
+    noscript: [
+      {
+        innerHTML:
+          '当サイトを閲覧するためには、JavaScriptを有効にしていただく必要があります。',
+        body: true,
+      },
+    ],
     link: [
       {
         rel: 'icon',
