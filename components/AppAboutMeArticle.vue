@@ -5,7 +5,7 @@
     </transition>
     <div class="articleMain">
       <transition name="avatar-fade">
-        <img v-if="visible" class="avatar" src="~/static/icon.png" alt="TinyKitten">
+        <img v-if="visible" class="avatar" src="~/assets/icon.svg" alt="TinyKitten">
       </transition>
       <transition name="paragraph-fade">
         <div v-if="visible" class="paragraph">
