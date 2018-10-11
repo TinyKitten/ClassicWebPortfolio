@@ -8,7 +8,7 @@
         <ul v-if="visible" class="projects">
           <li class="projectsRow">
             <a class="projectLink" href="https://stupefied-hamilton-a192b7.netlify.com" target="_blank" rel="noreferrer noopener">
-              <img class="projectImg" src="~/assets/works/nirot1r.png" alt="Neiro Otoiro Portfolio">
+              <img class="projectImg" src="~/assets/works/nirot1r.jpg" alt="Neiro Otoiro Portfolio">
               <p class="projectTitle">
                 Neiro Otoiro Portfolio
               </p>
@@ -16,7 +16,7 @@
           </li>
           <li class="projectsRow">
             <a class="projectLink" href="https://livelt.teamkitten.tk/" target="_blank" rel="noreferrer noopener">
-              <img class="projectImg" src="~/assets/works/liveltlp.png" alt="LiveLT(Landing Page)">
+              <img class="projectImg" src="~/assets/works/liveltlp.jpg" alt="LiveLT(Landing Page)">
               <p class="projectTitle">
                 LiveLT(Landing Page)
               </p>
