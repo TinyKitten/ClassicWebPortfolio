@@ -2,15 +2,18 @@
   <div>
     <app-header />
     <nuxt/>
+    <app-footer />
   </div>
 </template>
 
 <script>
 import AppHeader from '~/components/AppHeader.vue';
+import AppFooter from '~/components/AppFooter.vue';
 
 export default {
   components: {
     AppHeader,
+    AppFooter,
   },
 };
 </script>
@@ -153,6 +156,16 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
-  background: #fcfcfc;
+  background: #fefefe;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
 }
 </style>
