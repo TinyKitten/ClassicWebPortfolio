@@ -152,7 +152,7 @@ export default {
 /* Animation */
 .title-fade-enter-active,
 .title-fade-leave-active {
-  transition: all 1s 0.5s;
+  transition: all 1s 0s;
 }
 
 .title-fade-enter,
@@ -163,7 +163,7 @@ export default {
 
 .avatar-fade-enter-active,
 .avatar-fade-leave-active {
-  transition: all 1s 1s;
+  transition: all 1s 0.25s;
 }
 
 .avatar-fade-enter,
@@ -174,7 +174,7 @@ export default {
 
 .paragraph-fade-enter-active,
 .paragraph-fade-leave-active {
-  transition: all 1s 1.5s;
+  transition: all 1s 0.5s;
 }
 
 .paragraph-fade-enter,

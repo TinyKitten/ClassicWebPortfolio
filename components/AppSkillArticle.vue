@@ -124,7 +124,7 @@ export default {
 /* Animations */
 .title-fade-enter-active,
 .title-fade-leave-active {
-  transition: all 1s 0.5s;
+  transition: all 1s 0s;
 }
 
 .title-fade-enter,
@@ -135,7 +135,7 @@ export default {
 
 .languages-fade-enter-active,
 .languages-fade-leave-active {
-  transition: all 1s 1s;
+  transition: all 1s 0.5s;
 }
 
 .languages-fade-enter,
