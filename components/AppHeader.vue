@@ -24,6 +24,15 @@ header {
   align-items: center;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
 }
+@supports (
+  (-webkit-backdrop-filter: blur(4px)) or (backdrop-filter: blur(4px))
+) {
+  header {
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+  }
+}
 .title {
   text-decoration: none;
 }

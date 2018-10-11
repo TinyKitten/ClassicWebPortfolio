@@ -89,7 +89,7 @@ module.exports = {
   },
   manifest: {
     name: siteName,
-    short_name: 'Portal',
+    short_name: siteName,
     start_url: '/',
     display: 'standalone',
     background_color: '#fff',
@@ -98,7 +98,6 @@ module.exports = {
   },
   plugins: [
     { src: '~plugins/ga.js', ssr: false },
-    { src: '~plugins/element.js' },
+    { src: '~plugins/smoothscroll.js', ssr: false },
   ],
-  css: ['element-ui/lib/theme-chalk/index.css'],
 };
