@@ -49,7 +49,7 @@ export default {};
   height: 120px;
   border: 4px solid #fff;
   border-radius: 100%;
-  animation: 1s fadeIn 1s forwards;
+  animation: 1s fadeIn 0s forwards;
   opacity: 0;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
 }
@@ -58,13 +58,13 @@ export default {};
   font-size: 1.5rem;
   font-weight: bold;
   opacity: 0;
-  animation: 1s fadeIn 1.25s forwards;
+  animation: 1s fadeIn 0.5s forwards;
 }
 .heading2 {
   color: #555;
   margin-top: 8px;
   opacity: 0;
-  animation: 1s fadeIn 1.5s forwards;
+  animation: 1s fadeIn 0.75s forwards;
 }
 .arrow {
   position: absolute;
@@ -75,6 +75,6 @@ export default {};
   right: 0;
   margin: auto;
   opacity: 0;
-  animation: 1s arrow 2s forwards;
+  animation: 1s arrow 1s forwards;
 }
 </style>
