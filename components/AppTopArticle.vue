@@ -71,6 +71,9 @@ export default {};
   width: 48px;
   height: auto;
   bottom: 32px;
+  left: 0;
+  right: 0;
+  margin: auto;
   opacity: 0;
   animation: 1s arrow 2s forwards;
 }
