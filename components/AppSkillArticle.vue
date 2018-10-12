@@ -8,7 +8,7 @@
         <ul v-if="visible" class="languages">
           <li class="languageRow">
             <div class="languageImg">
-              <img src="~/assets/marks/languages/vue.png" alt="Vue.js">
+              <img src="~/assets/marks/languages/vue.svg" alt="Vue.js">
             </div>
             <p class="languageName">Vue.js</p>
           </li>
@@ -20,13 +20,25 @@
           </li>
           <li class="languageRow">
             <div class="languageImg">
-              <img src="~/assets/marks/languages/js.png" alt="JavaScript">
+              <img src="~/assets/marks/languages/html5.svg" alt="HTML5">
+            </div>
+            <p class="languageName">HTML5</p>
+          </li>
+          <li class="languageRow">
+            <div class="languageImg">
+              <img src="~/assets/marks/languages/css3.svg" alt="CSS3">
+            </div>
+            <p class="languageName">CSS3</p>
+          </li>
+          <li class="languageRow">
+            <div class="languageImg">
+              <img src="~/assets/marks/languages/js.svg" alt="JavaScript">
             </div>
             <p class="languageName">JavaScript</p>
           </li>
           <li class="languageRow">
             <div class="languageImg">
-              <img src="~/assets/marks/languages/go.png" alt="Go">
+              <img src="~/assets/marks/languages/go.svg" alt="Go">
             </div>
             <p class="languageName">Go</p>
           </li>
