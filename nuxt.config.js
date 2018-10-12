@@ -19,6 +19,7 @@ module.exports = {
       { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'theme-color', content: meta.themeColor },
+      { property: 'fb:app_id', content: '316017925842401' },
       // Add to home screen
       // for Safari on iOS
       { name: 'apple-mobile-web-app-capable', content: 'yes' },
