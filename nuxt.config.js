@@ -1,20 +1,24 @@
-const themeColor = '#008ffe';
-const siteName = 'TinyKitten.me';
-const siteDescription = 'TinyKittenのポートフォリオです。';
+const meta = {
+  title: 'TinyKitten',
+  description: 'TinyKittenのポートフォリオです。',
+  themeColor: '#008ffe',
+  url: 'https://tinykitten.me/',
+  twitter: '@tinykitten8',
+};
 
 module.exports = {
   /*
   ** Headers of the page
   */
   head: {
-    title: 'TinyKitten.me',
+    title: meta.title,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: siteDescription },
+      { hid: 'description', name: 'description', content: meta.description },
       { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'theme-color', content: themeColor },
+      { name: 'theme-color', content: meta.themeColor },
       // Add to home screen
       // for Safari on iOS
       { name: 'apple-mobile-web-app-capable', content: 'yes' },
@@ -59,7 +63,7 @@ module.exports = {
   /*
   ** Customize the progress bar color
   */
-  loading: { color: themeColor },
+  loading: { color: meta.themeColor },
   /*
   ** Build configuration
   */
@@ -80,20 +84,23 @@ module.exports = {
     },
   },
   meta: {
-    mobileAppIOS: true,
-    name: siteName,
-    author: 'TinyKitten',
-    description: siteDescription,
-    theme_color: '#008FFE',
+    name: meta.title,
+    author: meta.title,
+    description: meta.description,
+    theme_color: meta.themeColor,
     lang: 'ja',
+    twitterCard: 'summary',
+    twitterSite: meta.twitter,
+    twitterCreator: meta.twitter,
+    ogHost: meta.url,
   },
   manifest: {
-    name: siteName,
-    short_name: siteName,
+    name: meta.title,
+    short_name: meta.title,
     start_url: '/',
     display: 'standalone',
     background_color: '#fff',
-    description: siteDescription,
+    description: meta.description,
     lang: 'ja',
   },
   plugins: [
