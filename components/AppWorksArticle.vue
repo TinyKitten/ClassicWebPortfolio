@@ -7,7 +7,7 @@
       <transition name="projects-fade">
         <ul v-if="visible" class="projects">
           <li class="projectsRow">
-            <a class="projectLink" href="https://stupefied-hamilton-a192b7.netlify.com" target="_blank" rel="noreferrer noopener">
+            <a class="projectLink" href="https://neiro.work" target="_blank" rel="noreferrer noopener">
               <img class="projectImg" src="~/assets/works/nirot1r.jpg" alt="Neiro Otoiro Portfolio">
               <p class="projectTitle">
                 Neiro Otoiro Portfolio
