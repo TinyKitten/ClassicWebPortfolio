@@ -3,8 +3,8 @@
     <img class="logo" src="~/assets/icon.svg" alt="TinyKitten">
     <h1 class="heading1">TinyKitten</h1>
     <h2 class="heading2">Frontend Engineer/Designer</h2>
-    <a v-smooth-scroll="{ duration: 1000 }" href="#aboutme">
-      <img class="arrow" src="~/assets/arrow.svg" alt="Arrow">
+    <a v-smooth-scroll="{ duration: 1000 }" class="arrowLink" href="#aboutme">
+      <img src="~/assets/arrow.svg" alt="Arrow">
     </a>
   </article>
 </template>
@@ -66,7 +66,7 @@ export default {};
   opacity: 0;
   animation: 1s fadeIn 0.75s forwards;
 }
-.arrow {
+.arrowLink {
   position: absolute;
   width: 48px;
   height: auto;
