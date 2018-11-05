@@ -7,6 +7,14 @@
       <transition name="projects-fade">
         <ul v-if="visible" class="projects">
           <li class="projectsRow">
+            <a class="projectLink" href="https://tellable.tinykitten.me" target="_blank" rel="noreferrer noopener">
+              <img class="projectImg" src="~/assets/works/tellable.png" alt="Tellable">
+              <p class="projectTitle">
+                Tellable
+              </p>
+            </a>
+          </li>
+          <li class="projectsRow">
             <a class="projectLink" href="https://neiro.work" target="_blank" rel="noreferrer noopener">
               <img class="projectImg" src="~/assets/works/nirot1r.jpg" alt="Neiro Otoiro Portfolio">
               <p class="projectTitle">
