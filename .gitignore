@@ -12,4 +12,6 @@ dist
 
 .DS_Store
 
-sw.js
+sw.*
+
+.firebase

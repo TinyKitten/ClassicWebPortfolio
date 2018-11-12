@@ -1,0 +1,26 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/tellable
+    docker:
+      - image: circleci/node:8.12
+    steps:
+      - checkout
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: install-npm-wee
+          command: yarn
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - ./node_modules
+      - run:
+          name: lint
+          command: yarn lint
+      - run:
+          name: Generate static files
+          command: yarn generate
+      - run:
+          name: Deploy website
+          command: yarn deploy
