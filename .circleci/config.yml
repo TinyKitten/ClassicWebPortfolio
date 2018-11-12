@@ -23,4 +23,7 @@ jobs:
           command: yarn generate
       - run:
           name: Deploy website
-          command: yarn deploy
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              yarn deploy
+            fi
