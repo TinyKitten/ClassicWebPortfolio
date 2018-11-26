@@ -23,7 +23,7 @@ module.exports = {
       // Add to home screen
       // for Safari on iOS
       { name: 'apple-mobile-web-app-capable', content: 'yes' },
-      { name: 'apple-mobile-web-app-status-bar-style', content: 'black' },
+      { name: 'apple-mobile-web-app-status-bar-style', content: 'default' },
       { name: 'apple-mobile-web-app-title', content: 'TinyKitten' },
       // for Windows
       {
