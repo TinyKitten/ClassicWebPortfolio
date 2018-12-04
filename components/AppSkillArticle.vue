@@ -1,49 +1,63 @@
 <template>
   <article class="row">
-    <transition name="title-fade">
-      <h2 v-if="visible" class="articleTitle">SKILLS</h2>
-    </transition>
+    <Transition name="title-fade">
+      <h2 v-if="visible" class="articleTitle">
+        SKILLS
+      </h2>
+    </Transition>
     <div class="articleMain">
-      <transition name="languages-fade">
+      <Transition name="languages-fade">
         <ul v-if="visible" class="languages">
           <li class="languageRow">
             <div class="languageImg">
               <img src="~/assets/marks/languages/vue.svg" alt="Vue.js">
             </div>
-            <p class="languageName">Vue.js</p>
+            <p class="languageName">
+              Vue.js
+            </p>
           </li>
           <li class="languageRow">
             <div class="languageImg">
               <img src="~/assets/marks/languages/react.svg" alt="React.js">
             </div>
-            <p class="languageName">React.js</p>
+            <p class="languageName">
+              React.js
+            </p>
           </li>
           <li class="languageRow">
             <div class="languageImg">
               <img src="~/assets/marks/languages/html5.svg" alt="HTML5">
             </div>
-            <p class="languageName">HTML5</p>
+            <p class="languageName">
+              HTML5
+            </p>
           </li>
           <li class="languageRow">
             <div class="languageImg">
               <img src="~/assets/marks/languages/css3.svg" alt="CSS3">
             </div>
-            <p class="languageName">CSS3</p>
+            <p class="languageName">
+              CSS3
+            </p>
           </li>
           <li class="languageRow">
             <div class="languageImg">
               <img src="~/assets/marks/languages/js.svg" alt="JavaScript">
             </div>
-            <p class="languageName">JavaScript</p>
+            <p class="languageName">
+              JavaScript
+            </p>
           </li>
           <li class="languageRow">
             <div class="languageImg">
               <img src="~/assets/marks/languages/go.svg" alt="Go">
             </div>
-            <p class="languageName">Go</p>
+            <p class="languageName">
+              Go
+            </p>
           </li>
         </ul>
-      </transition>
+      </Transition>
     </div>
   </article>
 </template>

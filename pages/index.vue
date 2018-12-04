@@ -1,10 +1,10 @@
 <template>
   <section class="container">
-    <app-top-article />
-    <app-about-me-article />
-    <app-skill-article />
-    <app-works-article />
-    <app-contact />
+    <AppTopArticle />
+    <AppAboutMeArticle />
+    <AppSkillArticle />
+    <AppWorksArticle />
+    <AppContact />
   </section>
 </template>
 

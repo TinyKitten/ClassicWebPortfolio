@@ -1,8 +1,8 @@
 <template>
   <header>
-    <router-link to="/" class="title">
+    <RouterLink to="/" class="title">
       <img class="logo" src="~assets/icon.svg" alt="logo">
-    </router-link>
+    </RouterLink>
   </header>
 </template>
 

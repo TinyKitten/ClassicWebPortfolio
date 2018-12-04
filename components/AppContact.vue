@@ -1,9 +1,11 @@
 <template>
   <div class="row">
-    <transition name="title-fade">
-      <h2 v-if="visible" class="articleTitle">CONTACT</h2>
-    </transition>
-    <transition name="title-fade">
+    <Transition name="title-fade">
+      <h2 v-if="visible" class="articleTitle">
+        CONTACT
+      </h2>
+    </Transition>
+    <Transition name="title-fade">
       <iframe
         v-if="visible"
         src="https://docs.google.com/forms/d/e/1FAIpQLSfk-T44goScQGCIlV8t_5RB1xK8L6v5ErtEVlnwUPjA-Dr3WA/viewform?embedded=true"
@@ -15,7 +17,7 @@
       >
         読み込んでいます...
       </iframe>
-    </transition>
+    </Transition>
   </div>
 </template>
 

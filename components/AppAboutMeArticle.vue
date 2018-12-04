@@ -1,15 +1,19 @@
 <template>
   <article id="aboutme" class="row">
-    <transition name="title-fade">
-      <h2 v-if="visible" class="articleTitle">ABOUT ME</h2>
-    </transition>
+    <Transition name="title-fade">
+      <h2 v-if="visible" class="articleTitle">
+        ABOUT ME
+      </h2>
+    </Transition>
     <div class="articleMain">
-      <transition name="avatar-fade">
+      <Transition name="avatar-fade">
         <img v-if="visible" class="avatar" src="~/assets/icon.svg" alt="TinyKitten">
-      </transition>
-      <transition name="paragraph-fade">
+      </Transition>
+      <Transition name="paragraph-fade">
         <div v-if="visible" class="paragraph">
-          <h1 class="name">TinyKitten</h1>
+          <h1 class="name">
+            TinyKitten
+          </h1>
           <p class="bio">
             群馬県伊勢崎市在住のフリーの<br>フロントエンドエンジニア。<br>
             タイニーキトゥンと読みます。
@@ -37,7 +41,7 @@
             </li>
           </ul>
         </div>
-      </transition>
+      </Transition>
     </div>
   </article>
 </template>
