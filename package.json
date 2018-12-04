@@ -11,13 +11,12 @@
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
-    "pre": "concurrent \"npm run format\" \"npm run lint\"",
     "deploy": "firebase deploy --only hosting"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run pre",
-      "pre-push": "npm run pre"
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run lint"
     }
   },
   "dependencies": {
@@ -35,7 +34,7 @@
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-vue": "^5.0.0",
     "firebase-tools": "^6.0.1",
-    "husky": "^0.14.3",
+    "husky": "^1.2.0",
     "prettier": "^1.13.5"
   }
 }

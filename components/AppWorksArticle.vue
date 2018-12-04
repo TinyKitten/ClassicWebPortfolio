@@ -1,10 +1,12 @@
 <template>
   <article class="row">
-    <transition name="title-fade">
-      <h2 v-if="visible" class="articleTitle">WORKS</h2>
-    </transition>
+    <Transition name="title-fade">
+      <h2 v-if="visible" class="articleTitle">
+        WORKS
+      </h2>
+    </Transition>
     <div class="articleMain">
-      <transition name="projects-fade">
+      <Transition name="projects-fade">
         <ul v-if="visible" class="projects">
           <li class="projectsRow">
             <a class="projectLink" href="https://tellable.tinykitten.me" target="_blank" rel="noreferrer noopener">
@@ -39,7 +41,7 @@
             </a>
           </li>
         </ul>
-      </transition>
+      </Transition>
     </div>
   </article>
 </template>
