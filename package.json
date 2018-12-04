@@ -26,13 +26,13 @@
   },
   "devDependencies": {
     "babel-eslint": "^8.2.3",
-    "concurrently": "^4.1.0",
+    "concurrently": "^3.5.1",
     "eslint": "^5.4.0",
     "eslint-config-prettier": "^3.0.1",
     "eslint-friendly-formatter": "^4.0.1",
     "eslint-loader": "^2.0.0",
     "eslint-plugin-prettier": "^2.6.0",
-    "eslint-plugin-vue": "^5.0.0",
+    "eslint-plugin-vue": "^4.5.0",
     "firebase-tools": "^6.0.1",
     "husky": "^1.2.0",
     "prettier": "^1.13.5"
