@@ -9,30 +9,6 @@
       <Transition name="projects-fade">
         <ul v-if="visible" class="projects">
           <li class="projectsRow">
-            <a class="projectLink" href="https://tellable.tinykitten.me" target="_blank" rel="noreferrer noopener">
-              <img class="projectImg" src="~/assets/works/tellable.png" alt="Tellable">
-              <p class="projectTitle">
-                Tellable
-              </p>
-            </a>
-          </li>
-          <li class="projectsRow">
-            <a class="projectLink" href="https://neiro.work" target="_blank" rel="noreferrer noopener">
-              <img class="projectImg" src="~/assets/works/nirot1r.jpg" alt="Neiro Otoiro Portfolio">
-              <p class="projectTitle">
-                Neiro Otoiro Portfolio
-              </p>
-            </a>
-          </li>
-          <li class="projectsRow">
-            <a class="projectLink" href="https://livelt.teamkitten.tk/" target="_blank" rel="noreferrer noopener">
-              <img class="projectImg" src="~/assets/works/liveltlp.jpg" alt="LiveLT(Landing Page)">
-              <p class="projectTitle">
-                LiveLT(Landing Page)
-              </p>
-            </a>
-          </li>
-          <li class="projectsRow">
             <a class="projectLink" href="https://teamkitten.tk/" target="_blank" rel="noreferrer noopener">
               <img class="projectImg" src="~/assets/works/teamkittenmembers.png" alt="TeamKitten Website">
               <p class="projectTitle">
