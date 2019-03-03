@@ -4,7 +4,6 @@
     <app-about-me-article />
     <app-skill-article />
     <app-works-article />
-    <app-contact-article />
   </section>
 </template>
 
@@ -13,7 +12,6 @@ import AppTopArticle from '~/components/AppTopArticle.vue';
 import AppAboutMeArticle from '~/components/AppAboutMeArticle.vue';
 import AppSkillArticle from '~/components/AppSkillArticle.vue';
 import AppWorksArticle from '~/components/AppWorksArticle.vue';
-import AppContactArticle from '~/components/AppContactArticle.vue';
 
 export default {
   components: {
@@ -21,7 +19,6 @@ export default {
     AppAboutMeArticle,
     AppWorksArticle,
     AppSkillArticle,
-    AppContactArticle,
   },
 };
 </script>
