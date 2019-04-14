@@ -20,10 +20,10 @@
     }
   },
   "dependencies": {
-    "@nuxtjs/pwa": "^2.6.0",
+    "@nuxtjs/pwa": "^3.0.0-beta.14",
     "atob": "^2.1.2",
-    "nuxt": "^2.2.0",
-    "vue2-smooth-scroll": "^1.0.3"
+    "nuxt": "^2.5.0",
+    "vue2-smooth-scroll": "^1.0.5"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.3",
